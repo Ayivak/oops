@@ -1,6 +1,31 @@
 https://docs.python.org/3/library/functions.html#id
 
 
+
+Exercise:1
+
+def purchase_mobile(price,brand):
+    if brand == "Apple":
+        discount = 10
+    else:
+        discount = 5
+    total_price = price - price * discount / 100
+
+    print("Total price of Mobile is "+str(total_price))
+
+def purchase_shoe(price,material):
+    if material == "leather":
+        tax = 5
+    else:
+        tax = 2
+    total_price = price + price * tax / 100
+
+    print("Total price of Shoe is "+str(total_price))
+
+purchase_mobile(20000,"Apple")
+purchase_shoe(200,"leather")
+
+
 #OOPR-Exer-4
 class Athlete:
     def __init__(self,name,gender):
