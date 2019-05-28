@@ -57,3 +57,33 @@ class Athlete:
             print("200mtr running")
 a=Athlete("Maria","girl")
 a.running()
+
+
+#OOPR-Assgn-8 error
+#Start writing your code here
+
+class student:
+    def __init__(self,student_id,marks,age):
+        self.__student_id=student_id
+        self.__marks=marks
+        self.__age=age
+    def validate_marks(self):
+            if self.__marks>=0 and self.__marks<=100:
+                return True 
+        else:
+            return False 
+    def validate_age(self):
+        if self.__age>20:
+            return True
+        else:
+            return False
+    def check_qualification():
+        if validate_age()==True and validate_marks==True:
+            if self.__marks>=65:
+                return True
+            else:
+                return False
+        else:
+            return False
+c=student()
+        
