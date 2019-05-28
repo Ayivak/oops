@@ -1,1 +1,16 @@
 https://docs.python.org/3/library/functions.html#id
+
+
+#OOPR-Exer-4
+class Athlete:
+    def __init__(self,name,gender):
+        self.__name=name
+        self.__gender=gender
+
+    def running(self):
+        if(self.__gender=="girl"):
+            print("150mtr running")
+        else:
+            print("200mtr running")
+a=Athlete("Maria","girl")
+a.running()
